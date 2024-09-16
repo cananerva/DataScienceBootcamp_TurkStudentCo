@@ -1,0 +1,15 @@
+def tekrar_kontrol(dizi):
+    if len(dizi) == len(set(dizi)):
+        return "Dizide tekrar eden eleman yok."
+    else:
+        return "Dizide tekrar eden eleman veya elemanlar var."
+
+eleman_sayisi = int(input("girilecek eleman sayısı: "))
+
+dizi = []
+for i in range(eleman_sayisi):
+    eleman = int(input(f"{i+1}. elemanı girin: "))
+    dizi.append(eleman)
+
+sonuc = tekrar_kontrol(dizi)
+print(sonuc)

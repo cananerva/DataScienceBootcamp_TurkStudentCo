@@ -1,0 +1,7 @@
+
+sayi1 = int(input("1. sayı:"))
+sayi2 = int(input("2. sayı:"))
+
+toplam = sayi1 + sayi2
+
+print(toplam)
